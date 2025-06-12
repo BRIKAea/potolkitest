@@ -126,5 +126,7 @@ footer {
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
