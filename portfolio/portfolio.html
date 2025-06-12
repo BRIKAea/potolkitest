@@ -2,42 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Портфолио — Brika Потолки</title>
   <link rel="stylesheet" href="../css/styles.css" />
-  <style>
-    main h2 {
-      font-size: 2.5rem;
-      color: #007acc;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-
-    .portfolio-text {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 1.1rem;
-      color: #444;
-    }
-  </style>
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -56,13 +24,12 @@
 
   <main class="container">
     <h2>Портфолио выполненных работ</h2>
-    <p class="portfolio-text">Ниже представлены реальные объекты, которые мы сделали — от простых до сложных решений.</p>
-    
+    <p>Здесь будут фотографии и описания реальных объектов, выполненных нашей командой.</p>
+
     <div class="gallery">
-      <img src="Photos/1.jpg" alt="Работа 1" />
-      <img src="Photos/2.jpg"  alt="Работа 2" />
-      <img src="Photos/3.jpg" alt="Работа 3" />
-      <img src="Photos/4.jpg" alt="Работа 4" />
+      <a href="Photos/1.jpg" data-lightbox="portfolio" data-title="Работа 1">
+        <img src="Photos/1.jpg" alt="Работа 1" />
+      </a>
     </div>
   </main>
 
@@ -71,5 +38,8 @@
       <p>&copy; 2025 Brika — стильные натяжные потолки. Все права защищены.</p>
     </div>
   </footer>
+
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
