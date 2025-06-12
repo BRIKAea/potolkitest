@@ -56,7 +56,7 @@ main {
 }
 main h1 {
   font-size: 3rem;
-  color: #007acc;
+  color: red;
   margin-bottom: 20px;
 }
 main p {
