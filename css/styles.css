@@ -104,7 +104,8 @@ footer {
   }
 
 }
-* Стили для секции "О компании" *.about 
+* Стили для секции "О компании" *
+.about 
 {
   background: white;
   padding: 40px 20px;
