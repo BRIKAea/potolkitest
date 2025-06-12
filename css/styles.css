@@ -102,7 +102,10 @@ footer {
     padding: 12px 30px;
     font-size: 1rem;
   }
-  .about {
+
+}
+* Стили для секции "О компании" *.about 
+{
   background: white;
   padding: 40px 20px;
   margin-top: 60px;
@@ -124,4 +127,3 @@ footer {
   text-align: center;
 }
 
-}
