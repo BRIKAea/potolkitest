@@ -2,8 +2,42 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Портфолио — Brika Потолки</title>
   <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    main h2 {
+      font-size: 2.5rem;
+      color: #007acc;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .portfolio-text {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,23 +56,14 @@
 
   <main class="container">
     <h2>Портфолио выполненных работ</h2>
-    <p>Здесь будут фотографии и описания реальных объектов, выполненных нашей командой.</p>
-
+    <p class="portfolio-text">Ниже представлены реальные объекты, которые мы сделали — от простых до сложных решений.</p>
+    
     <div class="gallery">
-  <img src="Photos/1.jpg" alt="Работа 1" class="gallery-item" />
-  <img src="Photos/2.jpg" alt="Работа 2" class="gallery-item" />
-  <img src="Photos/3.jpg" alt="Работа 3" class="gallery-item" />
-  <!-- остальные фото -->
-</div>
-
-<!-- Лайтбокс -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-img" src="" alt="" />
-  <a class="prev">&#10094;</a>
-  <a class="next">&#10095;</a>
-</div>
-
+      <img src="photos/1.jpg" alt="Работа 1" />
+      <img src="photos/2.jpg" alt="Работа 2" />
+      <img src="photos/3.jpg" alt="Работа 3" />
+      <img src="photos/4.jpg" alt="Работа 4" />
+    </div>
   </main>
 
   <footer>
