@@ -146,19 +146,21 @@ main h2 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px 0;
 }
-
-.gallery img {
+.gallery a img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
-
-.gallery img:hover {
-  transform: scale(1.03);
+.gallery a img:hover {
+  transform: scale(1.05);
 }
+
 
