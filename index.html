@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Женя | Потолки и Освещение</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .gallery, .shop {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .item, .product {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .item img, .product img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Женя | Натяжные потолки и освещение</h1>
+    <nav>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#shop">Магазин</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <section id="portfolio">
+    <h2>Портфолио</h2>
+    <div class="gallery">
+      <div class="item"><img src="img/photo1.jpg" alt="Работа 1" /></div>
+      <div class="item"><img src="img/photo2.jpg" alt="Работа 2" /></div>
+      <div class="item"><img src="img/photo3.jpg" alt="Работа 3" /></div>
+      <!-- Добавь больше фото по желанию -->
+    </div>
+  </section>
+
+  <section id="shop">
+    <h2>Магазин освещения</h2>
+    <div class="shop">
+      <div class="product">
+        <img src="img/light1.jpg" alt="Светильник 1" />
+        <h3>Светильник LED 20Вт</h3>
+        <p>Цена: 1 500 ₽</p>
+        <a href="https://t.me/твоя_ссылка" target="_blank">Заказать в Telegram</a>
+      </div>
+      <div class="product">
+        <img src="img/light2.jpg" alt="Светильник 2" />
+        <h3>Магнитный профиль</h3>
+        <p>Цена: 2 200 ₽ / м</p>
+        <a href="https://wa.me/твоя_ссылка" target="_blank">Заказать в WhatsApp</a>
+      </div>
+      <!-- Добавь больше товаров -->
+    </div>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <p>Телефон: +7 (900) 123-45-67</p>
+    <p>Telegram: <a href="https://t.me/твоя_ссылка">@твоя_ссылка</a></p>
+    <p>Instagram: <a href="https://instagram.com/твоя_ссылка">@твоя_ссылка</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Женя | Все права защищены</p>
+  </footer>
+</body>
+</html>
