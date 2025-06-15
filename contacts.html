@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — Brika</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .contacts {
+      max-width: 700px;
+      margin: 60px auto;
+      background: rgba(255,255,255,0.9);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .contacts h1 {
+      margin-bottom: 20px;
+      color: #007acc;
+      font-size: 2.5rem;
+    }
+    .contacts p {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .social-links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .social-links li a {
+      text-decoration: none;
+      background: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,122,204,0.4);
+      transition: background 0.3s ease;
+    }
+    .social-links li a:hover {
+      background: #005f99;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Brika</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="portfolio/portfolio.html">Портфолио</a></li>
+          <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="contacts">
+      <h1>Контакты</h1>
+      <p>Телефон: <a href="tel:+79001234567">+7 (900) 123‑45‑67</a></p>
+      <p>Мы в социальных сетях:</p>
+      <ul class="social-links">
+        <li><a href="https://t.me/example" target="_blank" rel="noopener">Telegram</a></li>
+        <li><a href="https://instagram.com/example" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/79001234567" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://vk.com/example" target="_blank" rel="noopener">ВКонтакте</a></li>
+        <li><a href="https://youtube.com/example" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    © 2025 Brika — Все права защищены
+  </footer>
+</body>
+</html>
