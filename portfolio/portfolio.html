@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Портфолио — Brika Потолки</title>
   <link rel="stylesheet" href="../css/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-y0+3UFLGzzXGFM8kWK7DdvXr8E3TVaYlBB+xYxbITUw="
+    crossorigin=""
+  />
   <style>
     main h2 {
       font-size: 2.5rem;
@@ -36,6 +42,12 @@
       margin-bottom: 40px;
       font-size: 1.1rem;
       color: #444;
+    }
+
+    #map {
+      height: 500px;
+      border-radius: 12px;
+      margin-bottom: 40px;
     }
   </style>
 </head>
@@ -73,6 +85,11 @@
   <a class="prev">&#10094;</a>
   <a class="next">&#10095;</a>
 </div>
+  <section id="map-section">
+    <h2>Объекты на карте Тулы</h2>
+    <p class="portfolio-text">Нажмите на карту, чтобы отметить дом, где мы работали.</p>
+    <div id="map"></div>
+  </section>
   </main>
 
   <footer>
@@ -138,6 +155,21 @@
     if (e.key === 'ArrowRight' && lightbox.style.display === 'flex') {
       showNext();
     }
+  });
+</script>
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-o9N1jpa3xn/v4BzWm+0N6NLaIXJSlypLePvh/R3G2Lg="
+  crossorigin=""
+></script>
+<script>
+  const map = L.map('map').setView([54.1961, 37.6182], 12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  map.on('click', function (e) {
+    L.marker(e.latlng).addTo(map);
   });
 </script>
 </body>
